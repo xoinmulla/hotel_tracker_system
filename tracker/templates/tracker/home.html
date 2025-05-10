@@ -1,0 +1,102 @@
+{% extends 'tracker/base.html' %}
+
+{% block content %}
+<div class="jumbotron text-center" style="background-color: #fdf6f0;">
+  <h1 class="display-4">Welcome to the Hotel Guest Experience Tracker</h1>
+  <p class="lead">
+    Discover detailed insights into guest experiences, impeccable service records, and authentic reviews—all designed to elevate the hospitality experience.
+  </p>
+  <hr class="my-4">
+  <a class="btn btn-primary btn-lg" href="{% url 'guest_list' %}" role="button">View Guest Experiences</a>
+</div>
+
+<div class="container" style="background-color: #fff9f3; padding: 2rem; border-radius: 12px;">
+  <div class="row">
+    <!-- Elegant Rooms -->
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img class="card-img-top" src="https://i.pinimg.com/736x/bb/5b/c1/bb5bc13f084d668ad95f432efba0d97d.jpg" alt="Elegant Rooms">
+        <div class="card-body">
+          <h5 class="card-title">Elegant Rooms</h5>
+          <p class="card-text">
+            Enjoy luxurious comfort in our tastefully decorated rooms, designed for both rest and productivity. Modern decor, plush bedding, and 24/7 room service await you.
+          </p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exquisite Dining -->
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img class="card-img-top" src="https://i.pinimg.com/736x/3b/b4/4e/3bb44e43f98c7d825fde098c13bb6dcd.jpg" alt="Exquisite Dining">
+        <div class="card-body">
+          <h5 class="card-title">Exquisite Dining</h5>
+          <p class="card-text">
+            Savor internationally inspired cuisines prepared by award-winning chefs. Choose from buffet-style breakfasts to candlelight dinners.
+          </p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Explore Menu</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Luxury Amenities -->
+    <div class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img class="card-img-top" src="https://i.pinimg.com/736x/83/dc/b0/83dcb0f28bd65baaa6a20ad36b36fcfd.jpg  " alt="Luxury Amenities">
+        <div class="card-body">
+          <h5 class="card-title">Luxury Amenities</h5>
+          <p class="card-text">
+            Relax with our world-class amenities including an infinity pool, rejuvenating spa, business lounges, and personal concierge services.
+          </p>
+          <a href="#" class="btn btn-outline-primary btn-sm">Discover Amenities</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Our Hotel Section -->
+  <section id="about" class="mt-5">
+    <h2>About Our Hotel</h2>
+    <p>
+      Nestled in a vibrant neighborhood, our hotel blends modern sophistication with timeless elegance. Whether you're here for business or leisure, we offer a seamless experience of comfort and class.
+    </p>
+    <p>
+      With 150+ elegantly appointed rooms, 3 fine-dining restaurants, and a host of recreational facilities, we aim to make every guest feel like royalty. Our commitment to excellence ensures every stay is a story worth sharing.
+    </p>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="mt-5 p-4 rounded shadow-sm" style="background-color: #fcefe3;">
+    <h2>Why Choose Us?</h2>
+    <ul class="list-unstyled">
+      <li>✔ Prime location with easy access to key attractions and transit</li>
+      <li>✔ Personalized services tailored to your preferences</li>
+      <li>✔ Complimentary Wi-Fi and premium amenities</li>
+      <li>✔ 24/7 customer support and concierge</li>
+      <li>✔ Sustainable and eco-conscious hospitality practices</li>
+    </ul>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="mt-5 p-4 rounded" style="background-color: #f9f1e7;">
+    <h2>Guest Testimonials</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <blockquote class="blockquote">
+          <p class="mb-0">“This hotel is a gem! The staff went above and beyond to make our anniversary special. We can’t wait to return.”</p>
+          <footer class="blockquote-footer text-white">Emily R., New York</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-6">
+        <blockquote class="blockquote">
+          <p class="mb-0">“Exceptional service, delicious food, and the most comfortable bed I’ve ever slept in. Five stars No! Seven Star”</p>
+          <footer class="blockquote-footer text-white">James P., London</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+ 
+</div>
+{% endblock %}
